@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/Layouts/default.cshtml";
+}
+@if (Request.IsAuthenticated)
+{
+    <text>
+        <h2>About</h2>
+
+        <p>@ViewBag.Message</p>        
+
+        @*@using (Html.BeginForm("Logout", "Login", FormMethod.Post, new { id = "logoutForm" }))
+            {
+                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            }*@
+    </text>
+}
